@@ -6,6 +6,8 @@ import mysql from '../images/mysql.png'
 import python from '../images/python.png'
 import react from '../images/logo.svg'
 import javascript from '../images/javascript.png'
+import {FaJs,FaNodeJs,FaReact,FaFigma,FaPython,FaGithub} from 'react-icons/fa6'
+import {DiMongodb, DiMysql} from 'react-icons/di'
 
 
 export default function Main({children}) {
@@ -38,144 +40,75 @@ export default function Main({children}) {
                 <ul role="list" className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4 img-list-ext">
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                      <p>
+                     <div className="icon"><FaJs color='white' size={50}/></div>  <p>
                         Javascript
                         (Language)
                       </p>
-                      <img
-                        alt="Phobia"
-                        loading="lazy"
-                        width="184"
-                        height="36"
-                        decoding="async"
-                        data-nimg="1"
-                        style={{ color: 'transparent', transform:`scale(${scale})` }}
-                        src={javascript}
-                      />
+                     
+                     
                     </div>
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                     <p>
+                    <div className="icon">
+                      <FaNodeJs color='white' size={50}/>
+                      </div> <p>
                         Node.js
                         (Backend)
                       </p>
-                     <img
-                        alt="Family Fund"
-                        loading="lazy"
-                        width="184"
-                        height="36"
-                        decoding="async"
-                        data-nimg="1"
-                        style={{ color: 'transparent',transform:`scale(${scale})` }}
-                        src={node}
-                      />
+                    
                     </div>
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                      <p>
+                    <div className="icon"><FaReact color='white' size={50}/></div>   <p>
                         React
                         (Library)
                       </p>
-                      <img
-                        alt="Unseal"
-                        loading="lazy"
-                        width="184"
-                        height="36"
-                        decoding="async"
-                        data-nimg="1"
-                        style={{ color: 'transparent',transform:`scale(${scale})` }}
-                        src={react}
-                      />
+                      
                     </div>
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                    <p>
+                    <div className="icon"><DiMongodb color='white' size={50} /></div>  <p>
                         Mongodb
                         (Database)
                       </p>
-                      <img
-                        alt="Mail Smirk"
-                        loading="lazy"
-                        width="184"
-                        height="36"
-                        decoding="async"
-                        data-nimg="1"
-                        style={{ color: 'transparent',transform:`scale(${scale})` }}
-                        src={mongo}
-                      />
+                     
                     </div>
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                       <p>
+                    <div className="icon"><DiMysql color='white' size={50}/></div>    <p>
                         MySQL
                         (Database)
                       </p>
-                      <img
-                        alt="Home Work"
-                        loading="lazy"
-                        width="184"
-                        height="36"
-                        decoding="async"
-                        data-nimg="1"
-                        style={{ color: 'transparent' ,transform:`scale(${scale})`}}
-                        src={mysql}
-                      />
+                     
                     </div>
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                    <p>
+                    <div className="icon"><FaFigma  color='white' size={50} /></div> <p>
                         UI/UX (Figma)
                       </p>
-                      <img
-                        alt="Green Life"
-                        loading="lazy"
-                        width="184"
-                        height="36"
-                        decoding="async"
-                        data-nimg="1"
-                        style={{ color: 'transparent',transform:`scale(${scale})` }}
-                        src={figma}
-                      />
+                     
                     </div>
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                    <p>
+                    <div className="icon"><FaPython color='white' size={50}/></div> <p>
                         python
                         (Language)
                     </p>
-                      <img
-                        alt="Bright Path"
-                        loading="lazy"
-                        width="184"
-                        height="36"
-                        decoding="async"
-                        data-nimg="1"
-                        style={{ color: 'transparent' ,transform:`scale(${scale})`}}
-                        src={python}
-                      />
+                      
                     </div>
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                      <p>
-                        Graphic Design
+                    <div className="icon"><FaGithub color='white' size={50} /></div>  <p>
+                        Github
                       </p>
-                      <img
-                        alt="North Adventures"
-                        loading="lazy"
-                        width="184"
-                        height="36"
-                        decoding="async"
-                        data-nimg="1"
-                        style={{ color: 'transparent' ,transform:`scale(${scale})` }}
-                        src={ai}
-                      />
+    
                     </div>
                   </li>
                 </ul>
