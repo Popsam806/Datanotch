@@ -1,13 +1,21 @@
 * {
-    font-family: Mona Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-variation-settings: "wdth" 625;
-    font-stretch: expanded;
+    font-family: 'Chillax', sans-serif;
 }
 
-.center-img {
+.center-img p {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.center-img div {
     display: flex;
     align-items: center;
-    height: 60px;
+    max-width: 150px;
+}
+
+.img-list-ext .center-img:nth-child(1) div img {
+    width: 100px;
 }
 
 .rounded-4xl {

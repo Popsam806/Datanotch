@@ -31,32 +31,28 @@ export default function Services() {
                 <div style={{ opacity: 1, transform: "none" }}>
                   <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
                     <strong className="font-semibold text-neutral-950">Web development. </strong>
-                    We specialize in crafting beautiful, high-quality marketing pages. The rest of the website will be a shell that uses lorem ipsum everywhere.
-                  </div>
+                    We specialize in imparting the skills needed to create captivating, high-quality marketing pages, all while ensuring the entire website is engaging and fully functional. </div>
                 </div>
               </li>
               <li className="group mt-10 first:mt-0">
                 <div style={{ opacity: 1, transform: "none" }}>
                   <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                    <strong className="font-semibold text-neutral-950">Application development. </strong>
-                    We have a team of skilled developers who are experts in the latest app frameworks, like Angular 1 and Google Web Toolkit.
-                  </div>
+                    <strong className="font-semibold text-neutral-950">Software development. </strong>
+                    We're dedicated to teaching you all about software development. Our team of skilled developers excels in the latest app frameworks.</div>
                 </div>
               </li>
               <li className="group mt-10 first:mt-0">
                 <div style={{ opacity: 1, transform: "none" }}>
                   <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                    <strong className="font-semibold text-neutral-950">E-commerce. </strong>
-                    We are at the forefront of modern e-commerce development. Which mainly means adding your logo to the Shopify store template we’ve used for the past six years.
-                  </div>
+                    <strong className="font-semibold text-neutral-950">Data analysis. </strong>
+                    We're committed to helping you excel in data analysis with Python. Our expert team will guide you effectively in mastering this field. </div>
                 </div>
               </li>
               <li className="group mt-10 first:mt-0">
                 <div style={{ opacity: 1, transform: "none" }}>
                   <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
                     <strong className="font-semibold text-neutral-950">Custom content management. </strong>
-                    At Studio, we understand the importance of having a robust and customized CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.
-                  </div>
+                    At Digixtech, we're dedicated to helping you harness the full potential of custom content management. Count on our expert team to guide you effectively in mastering this topic.</div>
                 </div>
               </li>
             </ul>

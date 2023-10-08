@@ -6,11 +6,11 @@ export default function Footer(){
               <nav>
                 <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
                   <li>
-                    <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">Work</div>
+                    <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">Services</div>
                     <ul role="list" className="mt-4 text-sm text-neutral-700">
-                      <li className="mt-4"><a className="transition hover:text-neutral-950" href="/work/family-fund">FamilyFund</a></li>
-                      <li className="mt-4"><a className="transition hover:text-neutral-950" href="/work/unseal">Unseal</a></li>
-                      <li className="mt-4"><a className="transition hover:text-neutral-950" href="/work/phobia">Phobia</a></li>
+                      <li className="mt-4"><a className="transition hover:text-neutral-950" href="/work/family-fund">Web design</a></li>
+                      <li className="mt-4"><a className="transition hover:text-neutral-950" href="/work/unseal">Software development</a></li>
+                      <li className="mt-4"><a className="transition hover:text-neutral-950" href="/work/phobia">Web development</a></li>
                       <li className="mt-4"><a className="transition hover:text-neutral-950" href="/work">See all <span aria-hidden="true">→</span></a></li>
                     </ul>
                   </li>
@@ -48,7 +48,7 @@ export default function Footer(){
               <a aria-label="Home" href="/">
                 {/* Your logo SVG */}
               </a>
-              <p className="text-sm text-neutral-700">© Studio Agency Inc. 2023</p>
+              <p className="text-sm text-neutral-700">© Digixtech Agency Inc. 2023</p>
             </div>
           </div>
         </footer>

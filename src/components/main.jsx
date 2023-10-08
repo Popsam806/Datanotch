@@ -4,7 +4,7 @@ import figma from '../images/figma.png'
 import node from '../images/node.png'
 import mysql from '../images/mysql.png'
 import python from '../images/python.png'
-import css from '../images/css.png'
+import react from '../images/logo.svg'
 import javascript from '../images/javascript.png'
 
 
@@ -35,9 +35,13 @@ export default function Main({children}) {
                 <div className="h-px flex-auto bg-neutral-800"></div>
               </div>
               <div>
-                <ul role="list" className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
+                <ul role="list" className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4 img-list-ext">
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
+                      <p>
+                        Javascript
+                        (Language)
+                      </p>
                       <img
                         alt="Phobia"
                         loading="lazy"
@@ -52,7 +56,11 @@ export default function Main({children}) {
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                      <img
+                     <p>
+                        Node.js
+                        (Backend)
+                      </p>
+                     <img
                         alt="Family Fund"
                         loading="lazy"
                         width="184"
@@ -66,8 +74,30 @@ export default function Main({children}) {
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
+                      <p>
+                        React
+                        (Library)
+                      </p>
                       <img
                         alt="Unseal"
+                        loading="lazy"
+                        width="184"
+                        height="36"
+                        decoding="async"
+                        data-nimg="1"
+                        style={{ color: 'transparent',transform:`scale(${scale})` }}
+                        src={react}
+                      />
+                    </div>
+                  </li>
+                  <li className='center-img'>
+                    <div style={{ opacity: 1, transform: 'none' }}>
+                    <p>
+                        Mongodb
+                        (Database)
+                      </p>
+                      <img
+                        alt="Mail Smirk"
                         loading="lazy"
                         width="184"
                         height="36"
@@ -80,20 +110,10 @@ export default function Main({children}) {
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
-                      <img
-                        alt="Mail Smirk"
-                        loading="lazy"
-                        width="184"
-                        height="36"
-                        decoding="async"
-                        data-nimg="1"
-                        style={{ color: 'transparent',transform:`scale(${scale})` }}
-                        src={mysql}
-                      />
-                    </div>
-                  </li>
-                  <li className='center-img'>
-                    <div style={{ opacity: 1, transform: 'none' }}>
+                       <p>
+                        MySQL
+                        (Database)
+                      </p>
                       <img
                         alt="Home Work"
                         loading="lazy"
@@ -102,12 +122,15 @@ export default function Main({children}) {
                         decoding="async"
                         data-nimg="1"
                         style={{ color: 'transparent' ,transform:`scale(${scale})`}}
-                        src={css}
+                        src={mysql}
                       />
                     </div>
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
+                    <p>
+                        UI/UX (Figma)
+                      </p>
                       <img
                         alt="Green Life"
                         loading="lazy"
@@ -122,6 +145,10 @@ export default function Main({children}) {
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
+                    <p>
+                        python
+                        (Language)
+                    </p>
                       <img
                         alt="Bright Path"
                         loading="lazy"
@@ -136,6 +163,9 @@ export default function Main({children}) {
                   </li>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
+                      <p>
+                        Graphic Design
+                      </p>
                       <img
                         alt="North Adventures"
                         loading="lazy"

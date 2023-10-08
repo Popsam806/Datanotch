@@ -1,4 +1,7 @@
 import React from "react";
+import javascript from '../images/javascript.png'
+import react from '../images/logo.svg'
+import nodejs from '../images/node.png'
 
 export default function Article() {
   return (
@@ -19,7 +22,7 @@ export default function Article() {
                     data-nimg="1"
                     className="h-16 w-16"
                     style={{ color: "transparent" }}
-                    src="/_next/static/media/logomark-dark.4d2947be.svg"
+                    src={javascript}
                   />
                 </a>
               </h3>
@@ -33,12 +36,10 @@ export default function Article() {
                 <span>Case study</span>
               </p>
               <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                Skip the bank, borrow from those you trust
+                Learn to use javascript to make your page dynamic
               </p>
               <p className="mt-4 text-base text-neutral-600">
-                FamilyFund is a crowdfunding platform for friends and family.
-                Allowing users to take personal loans from their network
-                without a traditional financial institution.
+              JavaScript is a versatile programming language used for web development. It adds interactivity and functionality to websites, making them dynamic and user-friendly.
               </p>
             </article>
           </div>
@@ -56,13 +57,13 @@ export default function Article() {
                     data-nimg="1"
                     className="h-16 w-16"
                     style={{ color: "transparent" }}
-                    src="/_next/static/media/logomark-dark.73187f97.svg"
+                    src={react}
                   />
                 </a>
               </h3>
               <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
                 <time datetime="2022" className="font-semibold">
-                  2022
+                  2023
                 </time>
                 <span className="text-neutral-300" aria-hidden="true">
                   /
@@ -70,12 +71,10 @@ export default function Article() {
                 <span>Case study</span>
               </p>
               <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                Get a hodl of your health
+                Use React to build robust single page applications (SPA)
               </p>
               <p className="mt-4 text-base text-neutral-600">
-                Unseal is the first NFT platform where users can mint and trade
-                NFTs of their own personal health records, allowing them to
-                take control of their data.
+              React is a popular JavaScript library for building dynamic and responsive user interfaces. It simplifies UI development by using reusable components, enhancing web app efficiency.
               </p>
             </article>
           </div>
@@ -93,13 +92,13 @@ export default function Article() {
                     data-nimg="1"
                     className="h-16 w-16"
                     style={{ color: "transparent" }}
-                    src="/_next/static/media/logomark-dark.00d7d7b3.svg"
+                    src={nodejs}
                   />
                 </a>
               </h3>
               <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
                 <time datetime="2022" className="font-semibold">
-                  2022
+                  2023
                 </time>
                 <span className="text-neutral-300" aria-hidden="true">
                   /
@@ -107,12 +106,10 @@ export default function Article() {
                 <span>Case study</span>
               </p>
               <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                Overcome your fears, find your match
+                Build performant and scalable backend servers with NodeJs
               </p>
               <p className="mt-4 text-base text-neutral-600">
-                Find love in the face of fear — Phobia is a dating app that
-                matches users based on their mutual phobias so they can be
-                scared together.
+              Node.js is a runtime environment that allows server-side JavaScript execution. It's known for its non-blocking, event-driven architecture, making it ideal for scalable and efficient web applications.
               </p>
             </article>
           </div>
