@@ -11,6 +11,8 @@ export default function Header() {
         transformOrigin: '50% 50% 0px',
     }
 
+    let header_image_size = 100
+
     let [open , setOpen] = useState(false)
 
   return (
@@ -70,7 +72,7 @@ export default function Header() {
                 </svg>
               </a> */}
               <a aria-label="Home" href="/">
-                <img src={image} alt="" width={'150px'} />
+              <img src={image} alt="" width={`${header_image_size +'px'}`} />
               </a>
               <div className="flex items-center gap-x-8">
                 <a className="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-neutral-950 text-white hover:bg-neutral-800" href="/contact">
@@ -100,7 +102,7 @@ export default function Header() {
               <div className="mx-auto max-w-2xl lg:max-w-none">
                 <div className="flex items-center justify-between">
                 <a aria-label="Home" href="/">
-                <img src={image} alt="" width={'150px'} />
+                <img src={image} alt="" width={`${header_image_size +'px'}`} />
               </a>
                   <div className="flex items-center gap-x-8">
                     <a className="inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition bg-white text-neutral-950 hover:bg-neutral-200" href="/contact">

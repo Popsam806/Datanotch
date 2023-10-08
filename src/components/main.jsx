@@ -1,11 +1,4 @@
-import mongo from '../images/mongo.png'
-import ai from '../images/ai.png'
-import figma from '../images/figma.png'
-import node from '../images/node.png'
-import mysql from '../images/mysql.png'
-import python from '../images/python.png'
-import react from '../images/logo.svg'
-import javascript from '../images/javascript.png'
+
 import {FaJs,FaNodeJs,FaReact,FaFigma,FaPython,FaGithub} from 'react-icons/fa6'
 import {DiMongodb, DiMysql} from 'react-icons/di'
 
