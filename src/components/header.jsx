@@ -5,10 +5,13 @@ import image from '../header.png'
 import { Link } from "react-router-dom";
 
 export default function Header() {
+
+
+
   const headerStyles = {
     height: 'auto',
     transform: 'none',
-    transformOrigin: '50% 50% 0px',
+    transformOrigin: '50% 50% 0rem',
   }
 
   let header_image_size = 100
@@ -45,8 +48,8 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div id=":R5a:" style={!open ? { height: '0.5rem', transform: 'none', transformOrigin: '50% 50% 0px' } : headerStyles} className="relative z-50 overflow-hidden bg-neutral-950 pt-2" aria-hidden={!open} inert={!open}>
-        <div className="bg-neutral-800" style={{ transform: 'none', transformOrigin: '50% 50% 0px' }}>
+      <div id=":R5a:" style={!open ? { height: '0.5rem', transform: 'none', transformOrigin: '50% 50% 0rem' } : headerStyles} className="relative z-50 overflow-hidden bg-neutral-950 pt-2" aria-hidden={!open} inert={!open}>
+        <div className="bg-neutral-800" style={{ transform: 'none', transformOrigin: '50% 50% 0rem' }}>
           <div className="bg-neutral-950 pb-16 pt-14">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:max-w-none">

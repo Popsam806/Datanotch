@@ -1,10 +1,27 @@
-export default function Footer(){
-    return (
+import React from 'react'
+import ScrollReveal from 'scrollreveal';
+
+export default class Footer extends React.Component {
+  refs = React.createRef();
+  componentDidMount() {
+    const opac = {
+      opacity: 0.1,
+      duration: 2000,
+      delay: 300,
+      scale: 1,
+      easing: "ease",
+    };
+    ScrollReveal().reveal(this.refs.services, opac);
+    ScrollReveal().reveal(this.refs.newsletter, opac);
+  }
+
+    render() {
+      return (
         <footer className="mx-auto max-w-7xl px-6 lg:px-8 mt-24 w-full sm:mt-32 lg:mt-40">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
               <nav>
-                <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+                <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3" ref='services'>
                   <li>
                     <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">Services</div>
                     <ul role="list" className="mt-4 text-sm text-neutral-700">
@@ -18,7 +35,7 @@ export default function Footer(){
                 </ul>
               </nav>
               <div className="flex lg:justify-end">
-                <form className="max-w-sm">
+                <form className="max-w-sm" ref='newsletter'>
                   <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">Sign up for our newsletter</h2>
                   <p className="mt-4 text-sm text-neutral-700">Subscribe to get the latest design news, articles, resources, and inspiration.</p>
                   <div className="relative mt-6">
@@ -53,4 +70,5 @@ export default function Footer(){
           </div>
         </footer>
     )
+    }
 }
