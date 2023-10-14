@@ -45,7 +45,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div id=":R5a:" style={!open ? { height: '0.5rem', transform: 'none', transformOrigin: '50% 50% 0px' } : headerStyles} className="relative z-50 overflow-hidden bg-neutral-950 pt-2" aria-hidden="true" inert="">
+      <div id=":R5a:" style={!open ? { height: '0.5rem', transform: 'none', transformOrigin: '50% 50% 0px' } : headerStyles} className="relative z-50 overflow-hidden bg-neutral-950 pt-2" aria-hidden={!open} inert={!open}>
         <div className="bg-neutral-800" style={{ transform: 'none', transformOrigin: '50% 50% 0px' }}>
           <div className="bg-neutral-950 pb-16 pt-14">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
