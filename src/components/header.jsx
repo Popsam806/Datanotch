@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import ScrollReveal from "scrollreveal";
 import Nav from "./nav";
 import OtherInfo from "./otherinfo";
 import image from '../header.png'

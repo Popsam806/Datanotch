@@ -1,45 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import javascript from "../images/javascript.png";
 import react from "../images/logo.svg";
 import nodejs from "../images/node.png";
 import ScrollReveal from "scrollreveal";
 
-export default class Article extends React.Component {
-  refs = React.createRef();
-  componentDidMount() {
-    const scale1 = {
-      origin: "center",
-      duration: 1000,
+export default function Article()  {
+  const scale1 = useRef();
+  const scale2 = useRef();
+  const scale3 = useRef();
+  useEffect(() => {
+    const sr = ScrollReveal();
+    sr.reveal(scale1.current, {
+      duration: 2000,
       delay: 150,
-      scale: .7,
+      scale: .8,
       easing: "ease",
-    };
-    const scale2 = {
-      origin: "center",
-      duration: 1000,
-      delay: 500,
-      scale: .7,
+    },
+    sr.reveal(scale2.current, {
+      duration: 2000,
+      delay: 150,
+      scale: .8,
       easing: "ease",
-    };
-    const scale3 = {
-      origin: "center",
-      duration: 1000,
-      delay: 850,
-      scale: .7,
+    },
+    sr.reveal(scale3.current, {
+      duration: 2000,
+      delay: 150,
+      scale: .8,
       easing: "ease",
-    };
-    ScrollReveal().reveal(this.refs.article1, scale1);
-    ScrollReveal().reveal(this.refs.article2, scale2);
-    ScrollReveal().reveal(this.refs.article3, scale3);
-  }
+    })))
 
-  render() {
+  }, []);
+
     return (
       <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className="flex" style={{ opacity: 1, transform: "none" }}>
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8" ref='article1'>
+              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8" ref={scale1}>
                 <h3>
                   <a href="/work/family-fund">
                     <span className="absolute inset-0 rounded-3xl"></span>
@@ -76,7 +73,7 @@ export default class Article extends React.Component {
               </article>
             </div>
             <div className="flex" style={{ opacity: 1, transform: "none" }}>
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8" ref='article2'>
+              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8" ref={scale2}>
                 <h3>
                   <a href="/work/unseal">
                     <span className="absolute inset-0 rounded-3xl"></span>
@@ -113,7 +110,7 @@ export default class Article extends React.Component {
               </article>
             </div>
             <div className="flex" style={{ opacity: 1, transform: "none" }}>
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8" ref='article3'>
+              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8" ref={scale3}>
                 <h3>
                   <a href="/work/phobia">
                     <span className="absolute inset-0 rounded-3xl"></span>
@@ -154,5 +151,5 @@ export default class Article extends React.Component {
         </div>
       </div>
     );
-  }
+  
 }

@@ -1,16 +1,45 @@
-
+import React, { useEffect, useRef } from "react";
+import ScrollReveal from "scrollreveal";
 import {FaJs,FaNodeJs,FaReact,FaFigma,FaPython,FaGithub} from 'react-icons/fa6'
 import {DiMongodb, DiMysql} from 'react-icons/di'
 
 
 export default function Main({children}) {
 
+
+  const elementRef = useRef();
+  const scl = useRef();
+  useEffect(() => {
+    const sr = ScrollReveal();
+    sr.reveal(elementRef.current, {
+      origin: "left",
+      duration: 1000,
+      delay: 150,
+      distance: "10rem",
+      scale: 1,
+      easing: "ease",
+    },
+    sr.reveal(scl.current, {
+      duration: 2000,
+      delay: 150,
+      scale: .9,
+      easing: "ease",
+    }))
+
+    return () => {
+      sr.clean(elementRef.current);
+      sr.clean(scl.current);
+    }; 
+  }, []);
+
+
+
     const scale = 0.4
     return (
       <main className="w-full flex-auto">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 md:mt-56">
-          <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div className="max-w-3xl" style={{ opacity: 1, transform: 'none' }}>
+          <div className="mx-auto max-w-2xl lg:max-w-none" >
+            <div className="max-w-3xl" style={{ opacity: 1, transform: 'none' }} ref={elementRef}>
               <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 sm:text-7xl">
               Empowering Beginners in Tech: Elevating Skillsets.
               </h1>
@@ -30,7 +59,7 @@ export default function Main({children}) {
                 <div className="h-px flex-auto bg-neutral-800"></div>
               </div>
               <div>
-                <ul role="list" className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4 img-list-ext">
+                <ul role="list" className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4 img-list-ext" ref={scl}>
                   <li className='center-img'>
                     <div style={{ opacity: 1, transform: 'none' }}>
                      <div className="icon"><FaJs color='white' size={50}/></div>  <p>
