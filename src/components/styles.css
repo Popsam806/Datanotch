@@ -1,0 +1,33 @@
+input:focus {
+  outline: none;
+}
+.mainlayout {
+  height: 100vh !important;
+  overflow: hidden;
+}
+.home {
+  overflow: scroll;
+  height: 100vh;
+}
+.sidenav {
+  height: 100vh;
+}
+
+.grey {
+  background-color: #ddd;
+}
+
+
+@media (max-width:48rem) {
+    .mainlayout {
+        height: 100% !important;
+      }
+      .home {
+        height: 100%;
+      }
+      .sidenav {
+        height: fit-content;
+        margin: 0;
+        width: 100%;
+      }
+}

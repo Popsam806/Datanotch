@@ -1,10 +1,8 @@
 
 import './App.css';
-import Dashboard from './components/dashboard';
-//import Home from './components/home';
-import Homepage from './components/homepage';
-import Login from './components/login';
+import Home from './components/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Services from './components/Services';
 
 
 function App() {
@@ -12,9 +10,9 @@ function App() {
   <div className="flex min-h-full flex-col">
     <Router>
       <Routes>
-       <Route path='/' element={<Homepage />} />
-       <Route path='/login' element={<Login />} />
-       <Route path='/dashboard' element={<Dashboard />} />
+       <Route path='/' element={<Home />} />
+       <Route path='/service' element={<Services />} />
+       {/* <Route path='/dashboard' element={<Dashboard />} /> */}
        
       </Routes>
     </Router> 
